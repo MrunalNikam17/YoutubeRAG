@@ -1,0 +1,5 @@
+-r backend/requirements.txt
+streamlit
+pytest
+pytest-cov
+httpx

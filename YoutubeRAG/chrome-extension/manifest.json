@@ -1,0 +1,45 @@
+{
+    "manifest_version": 3,
+    "name": "AI YouTube Video Chatbot",
+    "version": "1.0.0",
+    "description": "Chat with the current YouTube video using transcript-grounded RAG.",
+    "permissions": [
+        "storage",
+        "tabs",
+        "sidePanel"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*",
+        "https://youtu.be/*",
+        "http://127.0.0.1:8000/*",
+        "http://localhost:8000/*",
+        "http://127.0.0.1:8001/*",
+        "http://localhost:8001/*",
+        "http://127.0.0.1:8002/*",
+        "http://localhost:8002/*",
+        "http://127.0.0.1/*",
+        "http://localhost/*"
+    ],
+    "background": {
+        "service_worker": "assets/serviceWorker.js",
+        "type": "module"
+    },
+    "action": {
+        "default_title": "Open AI YouTube Chat"
+    },
+    "side_panel": {
+        "default_path": "sidepanel.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*",
+                "https://youtu.be/*"
+            ],
+            "js": [
+                "assets/content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}

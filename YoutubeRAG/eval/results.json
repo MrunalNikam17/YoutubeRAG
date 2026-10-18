@@ -1,0 +1,4 @@
+{
+  "status": "not_run",
+  "message": "Run python eval/run_eval.py with a completed dataset and configured Groq credentials to generate metrics."
+}

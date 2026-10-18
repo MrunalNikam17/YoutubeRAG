@@ -1,0 +1,32 @@
+[
+  {
+    "video_id": "J5_-l7WIO_w",
+    "question": "What does RAG stand for?",
+    "expected_answer": "Retrieval Augmented Generation.",
+    "type": "answerable"
+  },
+  {
+    "video_id": "J5_-l7WIO_w",
+    "question": "What is the main point of the video?",
+    "expected_answer": "Replace this with the video's main point.",
+    "type": "answerable"
+  },
+  {
+    "video_id": "J5_-l7WIO_w",
+    "question": "Which named method or tool does the speaker describe?",
+    "expected_answer": "Replace this with a method or tool stated in the transcript.",
+    "type": "answerable"
+  },
+  {
+    "video_id": "J5_-l7WIO_w",
+    "question": "What exact year or quantity does the speaker mention?",
+    "expected_answer": "Replace this with a year or quantity stated in the transcript.",
+    "type": "answerable"
+  },
+  {
+    "video_id": "J5_-l7WIO_w",
+    "question": "What is the speaker's favorite color?",
+    "expected_answer": "I couldn't find that information in this video.",
+    "type": "unanswerable"
+  }
+]

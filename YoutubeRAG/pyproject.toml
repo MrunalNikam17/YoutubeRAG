@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=backend --cov-report=term-missing --cov-fail-under=80"
+
+[tool.coverage.run]
+source = ["backend"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
